@@ -69,7 +69,7 @@ YEPS GraphQL server
 
 ## Options
 
-The `graphqlHTTP` function accepts the following options:
+The `graphql` function accepts the following options:
 
   * **`schema`**: A `GraphQLSchema` instance from [`GraphQL.js`][].
     A `schema` *must* be provided.
@@ -108,14 +108,6 @@ is provided the arguments `(request, response, graphQLParams)` and is called
 after the request has been parsed.
 
 The `graphQLParams` is provided as the object `{ query, variables, operationName, raw }`.
-
-```js
-app.use('/graphql', graphqlHTTP(async (request, response, graphQLParams) => ({
-  schema: MyGraphQLSchema,
-  rootValue: await someFunctionToGetRootValue(request)
-  graphiql: true
-})));
-```
 
 
 ## HTTP Usage
