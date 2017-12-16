@@ -157,7 +157,7 @@ depending on the provided *Content-Type* header.
 
 ## Schema example
 
-    const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require('graphql');
+    const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require('yeps-graphql/graphql');
     
     const schema = new GraphQLSchema({
       query: new GraphQLObjectType({

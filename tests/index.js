@@ -4,7 +4,7 @@ const chai = require('chai');
 const chaiHttp = require('chai-http');
 const srv = require('yeps-server');
 const Router = require('yeps-router');
-const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require('graphql');
+const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require('../graphql');
 const graphql = require('..');
 
 const { expect } = chai;
