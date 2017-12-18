@@ -46,15 +46,6 @@ YEPS GraphQL server
     
     server.createHttpServer(app);
     
-## Custom router
-
-    app.then(async (ctx) => {
-      if (ctx.req.url === '/graphql') {
-        return graphql(options)(ctx);
-      }
-      
-      return app.resolve();
-    });
     
 ## With router
 
@@ -184,3 +175,5 @@ Request: **`/?query={hello}`** will return **`{"data":{"hello":"world"}}`**.
 
 
 #### [YEPS documentation](http://yeps.info/)
+
+#### [Node.js GraphQL from scratch](https://medium.com/@evheniybystrov/node-js-graphql-from-scratch-80138b7bcdc)
