@@ -1,6 +1,6 @@
 {
   "name": "yeps-graphql",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "YEPS GraphQL server",
   "main": "index.js",
   "scripts": {
@@ -47,19 +47,18 @@
   "dependencies": {
     "debug": "^3.1.0",
     "express-graphql": "^0.6.11",
-    "graphql": "^0.12.0",
     "yeps-express-wrapper": "^1.0.1"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-http": "^3.0.0",
     "coveralls": "^3.0.0",
-    "eslint": "^4.13.1",
+    "eslint": "^4.17.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "husky": "^0.14.3",
     "istanbul": "^1.1.0-alpha.1",
-    "mocha": "^4.0.1",
+    "mocha": "^5.0.0",
     "mocha-lcov-reporter": "^1.3.0",
     "npm-run-all": "^4.1.2",
     "nsp": "^3.1.0",
@@ -68,5 +67,8 @@
     "yeps-error": "^1.3.1",
     "yeps-router": "^1.2.0",
     "yeps-server": "^1.1.2"
+  },
+  "peerDependencies": {
+    "graphql": "^0.13.0"
   }
 }

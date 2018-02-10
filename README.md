@@ -23,7 +23,7 @@ YEPS GraphQL server
 
 ## How to install
 
-    npm i -S yeps-graphql
+    npm i -S yeps-graphql graphql
   
 ## How to use
 
@@ -148,7 +148,7 @@ depending on the provided *Content-Type* header.
 
 ## Schema example
 
-    const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require('yeps-graphql/graphql');
+    const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require('graphql');
     
     const schema = new GraphQLSchema({
       query: new GraphQLObjectType({
