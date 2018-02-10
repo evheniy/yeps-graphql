@@ -3,6 +3,6 @@ node_js:
   - "7"
   - "8"
 script:
-  - npm igraphql
+  - npm i graphql
   - npm run test
   - npm run report
